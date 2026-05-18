@@ -31,3 +31,12 @@ public:
     }
 };
 
+class RekeningKonvensional : public RekeningBank {
+public:
+    RekeningKonvensional(string n, double s) : RekeningBank(n, s) {}
+    
+    void potongAdmin() override {
+        saldo -= 15000;
+    }
+};
+
