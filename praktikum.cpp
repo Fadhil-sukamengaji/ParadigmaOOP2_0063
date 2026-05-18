@@ -23,3 +23,11 @@ public:
     }
 };
 
+class RekeningSyariah : public RekeningBank {
+public:
+    RekeningSyariah(string n, double s) : RekeningBank(n, s) {}
+    
+    void potongAdmin() override {
+    }
+};
+
