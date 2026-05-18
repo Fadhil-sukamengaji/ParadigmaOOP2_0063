@@ -40,3 +40,14 @@ public:
     }
 };
 
+class RekeningPremium : public RekeningBank {
+public:
+    RekeningPremium(string n, double s) : RekeningBank(n, s) {}
+    
+    void potongAdmin() override {
+        if (saldo <= 10000000) {
+            saldo -= 50000;
+        }
+    }
+};
+
