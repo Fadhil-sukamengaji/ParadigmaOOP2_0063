@@ -51,3 +51,21 @@ public:
     }
 };
 
+int main() {
+    RekeningSyariah mhs1("Fadhil", 5000000);
+    RekeningKonvensional mhs2("Budi", 2000000);
+    RekeningPremium mhs3("Siti", 15000000);
+    RekeningPremium mhs4("Andi", 8000000);
+
+    mhs1.potongAdmin();
+    mhs2.potongAdmin();
+    mhs3.potongAdmin();
+    mhs4.potongAdmin();
+
+    mhs1.cetakInfo();
+    mhs2.cetakInfo();
+    mhs3.cetakInfo();
+    mhs4.cetakInfo();
+
+    return 0;
+}
